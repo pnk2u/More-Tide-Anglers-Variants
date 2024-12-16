@@ -1,0 +1,7 @@
+{
+  "parent": "mstv-mweaponv:item/dark_oak_bow",
+  "textures": {
+    "layer0": "mstv-mweaponv:item/dark_oak_bow_pulling_2_oak_arrow",
+    "layer1": "mtideanglersv:item/pulling_2_deep_aqua_arrow_head"
+  }
+}

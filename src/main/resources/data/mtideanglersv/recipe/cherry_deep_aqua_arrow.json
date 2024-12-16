@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "deep_aqua_arrows",
+  "key": {
+    "#": {
+      "item": "mstv-mweaponv:cherry_arrow"
+    },
+    "C": {
+      "item": "tide:deep_aqua_crystal"
+    }
+  },
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "id": "mtideanglersv:cherry_deep_aqua_arrow"
+  }
+}

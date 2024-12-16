@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "mtideanglersv:block/spruce_loot_crate_bottom",
+    "side": "mtideanglersv:block/spruce_loot_crate",
+    "top": "mtideanglersv:block/spruce_loot_crate_bottom"
+  }
+}

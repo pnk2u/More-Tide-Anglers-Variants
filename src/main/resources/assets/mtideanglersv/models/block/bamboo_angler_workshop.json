@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "mtideanglersv:block/bamboo_loot_crate_bottom",
+    "side": "mtideanglersv:block/bamboo_angler_workshop_side",
+    "top": "mtideanglersv:block/bamboo_angler_workshop_top"
+  }
+}

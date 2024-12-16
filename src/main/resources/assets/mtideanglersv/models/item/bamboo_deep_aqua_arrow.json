@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mtideanglersv:item/deep_aqua_arrow_head",
+    "layer1": "mstv-mweaponv:item/tipped_bamboo_arrow_base"
+  }
+}

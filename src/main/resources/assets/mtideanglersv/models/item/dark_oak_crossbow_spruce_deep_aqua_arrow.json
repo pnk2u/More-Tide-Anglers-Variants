@@ -1,0 +1,7 @@
+{
+  "parent": "item/crossbow",
+  "textures": {
+    "layer0": "mstv-mweaponv:item/dark_oak_crossbow_spruce_arrow",
+    "layer1": "mtideanglersv:item/charged_deep_aqua_arrow_head"
+  }
+}
