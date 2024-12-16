@@ -57,6 +57,9 @@ dependencies {
 	// More Weapon Variants + MStV
 	modCompileOnly "curse.maven:more-stick-variants-1096913:${project.mstv_version_id}"
 	modCompileOnly "curse.maven:more-weapon-variants-1133775:${project.mweaponv_version_id}"
+
+	// Cloth-Config
+	modRuntimeOnly "curse.maven:cloth-config-348521:${project.clothconfig_version_id}"
 }
 
 processResources {
