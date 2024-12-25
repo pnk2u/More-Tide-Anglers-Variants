@@ -3,7 +3,7 @@
   "plugin": "de.pnku.mtideanglersv.mixin.MtavMixinPlugin",
   "minVersion": "0.8" ,
   "package": "de.pnku.mtideanglersv.mixin" ,
-  "compatibilityLevel": "JAVA_21" ,
+  "compatibilityLevel": "JAVA_17" ,
   "mixins": [
     "entity.AbstractArrowMixin" ,
     "item.ArrowItemMixin" ,

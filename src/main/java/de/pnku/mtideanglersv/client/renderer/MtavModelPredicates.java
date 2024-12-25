@@ -39,21 +39,49 @@ public class MtavModelPredicates {
                             }
                         } else {arrowStickWood = null;}
                     } else {arrowStickWood = null;}
-                    switch (arrowStickWood) {
-                        case ("acacia") -> {return 0.01F;}
-                        case ("bamboo") -> {return 0.02F;}
-                        case ("birch") -> {return 0.03F;}
-                        case ("cherry") -> {return 0.04F;}
-                        case ("crimson") -> {return 0.05F;}
-                        case ("dark_oak") -> {return 0.06F;}
-                        case ("jungle") -> {return 0.07F;}
-                        case ("mangrove") -> {return 0.08F;}
-                        case ("oak") -> {return 0.09F;}
-                        case ("spruce") -> {return 0.10F;}
-                        case ("warped") -> {return 0.11F;}
-                        case null, default -> {return 0.0F;}
+                    if (arrowStickWood != null) {
+                        switch (arrowStickWood) {
+                            case ("acacia") -> {
+                                return 0.01F;
+                            }
+                            case ("bamboo") -> {
+                                return 0.02F;
+                            }
+                            case ("birch") -> {
+                                return 0.03F;
+                            }
+                            case ("cherry") -> {
+                                return 0.04F;
+                            }
+                            case ("crimson") -> {
+                                return 0.05F;
+                            }
+                            case ("dark_oak") -> {
+                                return 0.06F;
+                            }
+                            case ("jungle") -> {
+                                return 0.07F;
+                            }
+                            case ("mangrove") -> {
+                                return 0.08F;
+                            }
+                            case ("oak") -> {
+                                return 0.09F;
+                            }
+                            case ("spruce") -> {
+                                return 0.10F;
+                            }
+                            case ("warped") -> {
+                                return 0.11F;
+                            }
+                            default -> {
+                                return 0.0F;
+                            }
+                        }
                     }
-                });
+                    return 0.0F;
+                }
+        );
     }
 
     private static void registerCrossbowChargedDeepAquaArrowPredicate(Item crossbowItem) {
