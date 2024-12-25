@@ -1,5 +1,8 @@
 {
   "values": [
-    "#mtideanglersv:deep_aqua_arrow_variants"
+    {
+    "id": "#mtideanglersv:deep_aqua_arrow_variants",
+    "required": false
+    }
   ]
 }

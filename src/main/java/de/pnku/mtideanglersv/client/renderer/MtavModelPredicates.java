@@ -11,8 +11,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ChargedProjectiles;
 
 import static de.pnku.mstv_mweaponv.item.MoreWeaponVariantItems.*;
-import static de.pnku.mtideanglersv.item.MtavItems.*;
-import static de.pnku.mtideanglersv.MoreTideAnglersVariants.LOGGER;
+import static de.pnku.mtideanglersv.item.MtavDAArrowItems.*;
 
 public class MtavModelPredicates {
 
@@ -20,9 +19,11 @@ public class MtavModelPredicates {
         for (Item bowItem : more_bows){
             registerBowDeepAquaArrowPredicate(bowItem);
         }
+        registerBowDeepAquaArrowPredicate(Items.BOW);
         for (Item crossbowItem : more_crossbows){
             registerCrossbowChargedDeepAquaArrowPredicate(crossbowItem);
         }
+        registerCrossbowChargedDeepAquaArrowPredicate(Items.CROSSBOW);
     }
 
     private static void registerBowDeepAquaArrowPredicate(Item bowItem) {
@@ -63,12 +64,34 @@ public class MtavModelPredicates {
                     if (CrossbowItem.isCharged(itemStack)) {
                         ChargedProjectiles chargedProjectiles = (ChargedProjectiles) itemStack.get(DataComponents.CHARGED_PROJECTILES);
                         if (chargedProjectiles != null) {
-                            if (chargedProjectiles.contains(TideItems.DEEP_AQUA_ARROW) || chargedProjectiles.contains(ACACIA_DEEP_AQUA_ARROW) || chargedProjectiles.contains(BAMBOO_DEEP_AQUA_ARROW) || chargedProjectiles.contains(BIRCH_DEEP_AQUA_ARROW) || chargedProjectiles.contains(CHERRY_DEEP_AQUA_ARROW) || chargedProjectiles.contains(CRIMSON_DEEP_AQUA_ARROW) || chargedProjectiles.contains(DARK_OAK_DEEP_AQUA_ARROW) || chargedProjectiles.contains(JUNGLE_DEEP_AQUA_ARROW) || chargedProjectiles.contains(MANGROVE_DEEP_AQUA_ARROW) || chargedProjectiles.contains(SPRUCE_DEEP_AQUA_ARROW) || chargedProjectiles.contains(WARPED_DEEP_AQUA_ARROW))
-                            {return 1.00F;}
-                            else {return 0.00F;}
-                        } else {return 0.00F;}
-                    } else {return 0.00F;}
-                });
+                            if (chargedProjectiles.contains(ACACIA_DEEP_AQUA_ARROW)) {
+                                return 0.01F;
+                            } else if (chargedProjectiles.contains(BAMBOO_DEEP_AQUA_ARROW)) {
+                                return 0.02F;
+                            } else if (chargedProjectiles.contains(BIRCH_DEEP_AQUA_ARROW)) {
+                                return 0.03F;
+                            } else if (chargedProjectiles.contains(CHERRY_DEEP_AQUA_ARROW)) {
+                                return 0.04F;
+                            } else if (chargedProjectiles.contains(CRIMSON_DEEP_AQUA_ARROW)) {
+                                return 0.05F;
+                            } else if (chargedProjectiles.contains(DARK_OAK_DEEP_AQUA_ARROW)) {
+                                return 0.06F;
+                            } else if (chargedProjectiles.contains(JUNGLE_DEEP_AQUA_ARROW)) {
+                                return 0.07F;
+                            } else if (chargedProjectiles.contains(MANGROVE_DEEP_AQUA_ARROW)) {
+                                return 0.08F;
+                            } else if (chargedProjectiles.contains(TideItems.DEEP_AQUA_ARROW)) {
+                                return 0.09F;
+                            } else if (chargedProjectiles.contains(SPRUCE_DEEP_AQUA_ARROW)) {
+                                return 0.10F;
+                            } else if (chargedProjectiles.contains(WARPED_DEEP_AQUA_ARROW)) {
+                                return 0.11F;
+                            }
+                        }
+                    }
+                    return 0.00F;
+                }
+        );
     }
 
 }

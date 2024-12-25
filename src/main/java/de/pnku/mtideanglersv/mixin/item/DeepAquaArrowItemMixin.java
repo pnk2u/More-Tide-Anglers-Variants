@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import static de.pnku.mstv_mweaponv.item.MoreWeaponVariantItems.more_weapon_sticks;
-import static de.pnku.mtideanglersv.item.MtavItems.more_deep_aqua_arrows;
+import static de.pnku.mtideanglersv.item.MtavDAArrowItems.more_deep_aqua_arrows;
 
 @Mixin(DeepAquaArrowItem.class)
 public abstract class DeepAquaArrowItemMixin {

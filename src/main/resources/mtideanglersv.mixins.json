@@ -1,5 +1,6 @@
 {
   "required": false ,
+  "plugin": "de.pnku.mtideanglersv.mixin.MtavMixinPlugin",
   "minVersion": "0.8" ,
   "package": "de.pnku.mtideanglersv.mixin" ,
   "compatibilityLevel": "JAVA_21" ,

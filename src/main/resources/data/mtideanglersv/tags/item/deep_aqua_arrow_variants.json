@@ -1,14 +1,52 @@
 {
   "values": [
-    "mtideanglersv:acacia_deep_aqua_arrow",
-    "mtideanglersv:bamboo_deep_aqua_arrow",
-    "mtideanglersv:birch_deep_aqua_arrow",
-    "mtideanglersv:cherry_deep_aqua_arrow",
-    "mtideanglersv:crimson_deep_aqua_arrow",
-    "mtideanglersv:dark_oak_deep_aqua_arrow",
-    "mtideanglersv:jungle_deep_aqua_arrow",
-    "mtideanglersv:mangrove_deep_aqua_arrow",
-    "mtideanglersv:spruce_deep_aqua_arrow",
-    "mtideanglersv:warped_deep_aqua_arrow"
+    {
+      "id": "mtideanglersv:acacia_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id": "mtideanglersv:bamboo_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
+      "mtideanglersv:birch_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
+      "mtideanglersv:cherry_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
+      "mtideanglersv:crimson_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
+      "mtideanglersv:dark_oak_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
+      "mtideanglersv:jungle_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
+      "mtideanglersv:mangrove_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
+      "mtideanglersv:spruce_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
+      "mtideanglersv:warped_deep_aqua_arrow",
+      "required": false
+    }
   ]
 }
