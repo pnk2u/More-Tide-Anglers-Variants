@@ -21,12 +21,12 @@ import static de.pnku.mtideanglersv.item.MtavDAArrowItems.more_deep_aqua_arrows;
 @Mixin(DeepAquaArrowItem.class)
 public abstract class DeepAquaArrowItemMixin {
     @Inject(method = "createArrow", at = @At("HEAD"), cancellable = true)
-    public void injectedCreateArrow(Level level, ItemStack ammo, LivingEntity shooter, ItemStack weapon, CallbackInfoReturnable<AbstractArrow> cir) {
+    public void injectedCreateArrow(Level level, ItemStack ammo, LivingEntity shooter, CallbackInfoReturnable<AbstractArrow> cir) {
         Item deepAquaArrowVariantItem = ammo.getItem();
         Item deepAquaStickItem;
         String deepAquaArrowVariant;
         if (more_deep_aqua_arrows.contains(deepAquaArrowVariantItem)) {
-            AbstractArrow deepAquaArrow = new DeepAquaArrow(level, shooter, ammo.copyWithCount(1), weapon);
+            AbstractArrow deepAquaArrow = new DeepAquaArrow(level, shooter, ammo.copyWithCount(1));
             deepAquaStickItem = more_weapon_sticks.get(deepAquaArrowVariantItem);
             if (deepAquaStickItem.equals(Items.BAMBOO)) {
                 deepAquaArrowVariant = "bamboo";

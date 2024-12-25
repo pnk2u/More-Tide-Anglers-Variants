@@ -27,8 +27,8 @@ public abstract class AbstractArrowMixin extends Projectile implements IDeepAqua
     }
 
     @Inject(method = "defineSynchedData", at = @At("TAIL"))
-    protected void injectedDefineSynchedData(SynchedEntityData.Builder builder, CallbackInfo ci) {
-        builder.define(DATA_ID_DAATYPE, "oak");
+    protected void injectedDefineSynchedData(CallbackInfo ci) {
+        this.entityData.define(DATA_ID_DAATYPE, "oak");
     }
 
     @Unique

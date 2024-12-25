@@ -1,0 +1,42 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded" ,
+        "values": [
+          "lolmct"
+        ]
+      }
+  ],
+  "neoforge:conditions": [
+      {
+        "type": "neoforge:mod_loaded",
+        "modid": "lolmct"
+      }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "angler_workshops",
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_planks"
+    },
+    "C": {
+      "item": "lolmct:crimson_crafting_table"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "S": {
+      "tag": "c:strings"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "ICI",
+    "#I#"
+  ],
+  "result": {
+    "count": 1,
+    "item": "mtideanglersv:crimson_angler_workshop"
+  }
+}

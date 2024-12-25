@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 48,
+    "pack_format": 15,
     "description": "Put this above \"Fabric Mods\" to make (Tide) Crate variants fishable."
   }
 }

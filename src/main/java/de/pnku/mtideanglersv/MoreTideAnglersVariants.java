@@ -43,7 +43,7 @@ public class MoreTideAnglersVariants implements ModInitializer {
 	}
 
 	public static ResourceLocation asId(String path) {
-		return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+		return new ResourceLocation(MOD_ID, path);
 	}
 
 }

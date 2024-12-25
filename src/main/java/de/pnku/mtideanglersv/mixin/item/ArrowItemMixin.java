@@ -5,6 +5,8 @@ import de.pnku.mstv_base.item.MoreStickVariantItem;
 import de.pnku.mtideanglersv.util.IDeepAquaArrow;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.item.ArrowItem;
@@ -23,8 +25,8 @@ import static de.pnku.mtideanglersv.item.MtavDAArrowItems.more_deep_aqua_arrows;
 @Mixin(ArrowItem.class)
 public abstract class ArrowItemMixin implements IDeepAquaArrow {
 
-    @Inject(method = "asProjectile", at = @At(value = "RETURN", shift = At.Shift.BEFORE), cancellable = true)
-    public void injectedAsProjectile(Level level, Position pos, ItemStack ammo, Direction direction, CallbackInfoReturnable<Projectile> cir, @Local Arrow arrow) {
+    @Inject(method = "createArrow", at = @At(value = "RETURN", shift = At.Shift.BEFORE), cancellable = true)
+    public void injectedCreateProjectile(Level level, ItemStack ammo, LivingEntity shooter, CallbackInfoReturnable<AbstractArrow> cir, @Local Arrow arrow) {
         Item deepAquaArrowVariantItem = ammo.getItem();
         Item deepAquaStickItem;
         String deepAquaArrowVariant;

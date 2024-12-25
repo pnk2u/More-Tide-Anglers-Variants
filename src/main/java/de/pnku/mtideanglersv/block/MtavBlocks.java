@@ -5,7 +5,6 @@ import com.li64.tide.registries.TideBlocks;
 import com.li64.tide.registries.blocks.AnglerWorkshopBlock;
 import com.li64.tide.registries.blocks.SurfaceLootCrateBlock;
 import de.pnku.mtideanglersv.MoreTideAnglersVariants;
-import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
@@ -17,29 +16,29 @@ import java.util.List;
 import java.util.Map;
 
 public class MtavBlocks {
-    public static final Block SPRUCE_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block BIRCH_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block JUNGLE_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block ACACIA_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block DARK_OAK_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    //public static final Block PALE_OAK_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block MANGROVE_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block CHERRY_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block BAMBOO_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block CRIMSON_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
-    public static final Block WARPED_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block SPRUCE_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block BIRCH_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block JUNGLE_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block ACACIA_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block DARK_OAK_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    //public static final Block PALE_OAK_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block MANGROVE_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block CHERRY_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block BAMBOO_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block CRIMSON_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
+    public static final Block WARPED_CRATE = new SurfaceLootCrateBlock(BlockBehaviour.Properties.copy(TideBlocks.SURFACE_LOOT_CRATE));
 
-    public static final Block SPRUCE_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block BIRCH_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block JUNGLE_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block ACACIA_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block DARK_OAK_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    //public static final Block PALE_OAK_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block MANGROVE_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block CHERRY_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block BAMBOO_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block CRIMSON_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
-    public static final Block WARPED_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.ofFullCopy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block SPRUCE_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block BIRCH_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block JUNGLE_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block ACACIA_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block DARK_OAK_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    //public static final Block PALE_OAK_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block MANGROVE_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block CHERRY_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block BAMBOO_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block CRIMSON_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
+    public static final Block WARPED_ANGLER_WORKSHOP = new AnglerWorkshopBlock(BlockBehaviour.Properties.copy(TideBlocks.ANGLER_WORKSHOP));
 
     public static final List<Block> more_crates = new ArrayList<>();
     public static final List<Block> more_angler_workshops = new ArrayList<>();
@@ -77,7 +76,6 @@ public class MtavBlocks {
         more_crates.add(crate);
         more_crate_wood_types.put(crate, woodType);
 
-        ((FabricBlockEntityType) TideBlockEntities.SURFACE_LOOT_CRATE).addSupportedBlock(crate);
     }
 
     private static void registerAnglerWorkshopBlock(Block angler_workshop, String woodType) {

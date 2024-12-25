@@ -3,12 +3,10 @@ package de.pnku.mtideanglersv.client.renderer;
 import com.li64.tide.registries.TideItems;
 import de.pnku.mstv_base.item.MoreStickVariantItem;
 import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.component.ChargedProjectiles;
 
 import static de.pnku.mstv_mweaponv.item.MoreWeaponVariantItems.*;
 import static de.pnku.mtideanglersv.item.MtavDAArrowItems.*;
@@ -27,7 +25,7 @@ public class MtavModelPredicates {
     }
 
     private static void registerBowDeepAquaArrowPredicate(Item bowItem) {
-        ItemProperties.register(bowItem, ResourceLocation.parse("bowarrow_daa"),
+        ItemProperties.register(bowItem, new ResourceLocation("bowarrow_daa"),
                 (itemStack, clientLevel, livingEntity, seed) -> {
                     String arrowStickWood;
                     // Check from PullingPredicate
@@ -59,32 +57,31 @@ public class MtavModelPredicates {
     }
 
     private static void registerCrossbowChargedDeepAquaArrowPredicate(Item crossbowItem) {
-        ItemProperties.register(crossbowItem, ResourceLocation.parse("charged_projectiles_daa"),
+        ItemProperties.register(crossbowItem, new ResourceLocation("charged_projectiles_daa"),
                 (itemStack, clientLevel, livingEntity, i) -> {
                     if (CrossbowItem.isCharged(itemStack)) {
-                        ChargedProjectiles chargedProjectiles = (ChargedProjectiles) itemStack.get(DataComponents.CHARGED_PROJECTILES);
-                        if (chargedProjectiles != null) {
-                            if (chargedProjectiles.contains(ACACIA_DEEP_AQUA_ARROW)) {
+                        if (CrossbowItem.isCharged(itemStack)) {
+                            if (CrossbowItem.containsChargedProjectile(itemStack, ACACIA_DEEP_AQUA_ARROW)) {
                                 return 0.01F;
-                            } else if (chargedProjectiles.contains(BAMBOO_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, BAMBOO_DEEP_AQUA_ARROW)) {
                                 return 0.02F;
-                            } else if (chargedProjectiles.contains(BIRCH_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, BIRCH_DEEP_AQUA_ARROW)) {
                                 return 0.03F;
-                            } else if (chargedProjectiles.contains(CHERRY_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, CHERRY_DEEP_AQUA_ARROW)) {
                                 return 0.04F;
-                            } else if (chargedProjectiles.contains(CRIMSON_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, CRIMSON_DEEP_AQUA_ARROW)) {
                                 return 0.05F;
-                            } else if (chargedProjectiles.contains(DARK_OAK_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, DARK_OAK_DEEP_AQUA_ARROW)) {
                                 return 0.06F;
-                            } else if (chargedProjectiles.contains(JUNGLE_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, JUNGLE_DEEP_AQUA_ARROW)) {
                                 return 0.07F;
-                            } else if (chargedProjectiles.contains(MANGROVE_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, MANGROVE_DEEP_AQUA_ARROW)) {
                                 return 0.08F;
-                            } else if (chargedProjectiles.contains(TideItems.DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, TideItems.DEEP_AQUA_ARROW)) {
                                 return 0.09F;
-                            } else if (chargedProjectiles.contains(SPRUCE_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, SPRUCE_DEEP_AQUA_ARROW)) {
                                 return 0.10F;
-                            } else if (chargedProjectiles.contains(WARPED_DEEP_AQUA_ARROW)) {
+                            } else if (CrossbowItem.containsChargedProjectile(itemStack, WARPED_DEEP_AQUA_ARROW)) {
                                 return 0.11F;
                             }
                         }
