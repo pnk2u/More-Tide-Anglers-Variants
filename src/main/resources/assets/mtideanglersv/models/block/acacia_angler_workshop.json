@@ -1,8 +1,12 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "mtideanglersv:block/acacia_loot_crate_bottom",
-    "side": "mtideanglersv:block/acacia_angler_workshop_side",
-    "top": "mtideanglersv:block/acacia_angler_workshop_top"
+    "down": "mtideanglersv:block/acacia_angler_workshop_bottom",
+    "up": "tide:block/angler_workshop_top",
+    "east": "mtideanglersv:block/acacia_angler_workshop_side",
+    "west": "mtideanglersv:block/acacia_angler_workshop_side",
+    "north": "mtideanglersv:block/acacia_angler_workshop",
+    "south": "mtideanglersv:block/acacia_angler_workshop",
+    "particle": "mtideanglersv:block/acacia_angler_workshop"
   }
 }
