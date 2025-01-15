@@ -29,10 +29,10 @@
   ],
   "depends": {
 		"fabricloader": ">=0.16.0",
-		"minecraft": ">=${minecraft_version}",
+        "minecraft": ">=${minecraft_version}",
 		"java": ">=17",
 		"fabric-api": "*",
-        "tide": ">=1.4.1"
+        "tide": ">=1.5.0"
 	},
   "custom": {
     "modmenu": {

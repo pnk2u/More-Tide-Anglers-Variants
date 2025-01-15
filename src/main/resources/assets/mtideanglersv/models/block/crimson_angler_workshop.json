@@ -1,8 +1,12 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "mtideanglersv:block/crimson_loot_crate_bottom",
-    "side": "mtideanglersv:block/crimson_angler_workshop_side",
-    "top": "mtideanglersv:block/crimson_angler_workshop_top"
+    "down": "mtideanglersv:block/crimson_angler_workshop_bottom",
+    "up": "tide:block/angler_workshop_top",
+    "east": "mtideanglersv:block/crimson_angler_workshop_side",
+    "west": "mtideanglersv:block/crimson_angler_workshop_side",
+    "north": "mtideanglersv:block/crimson_angler_workshop",
+    "south": "mtideanglersv:block/crimson_angler_workshop",
+    "particle": "mtideanglersv:block/crimson_angler_workshop"
   }
 }

@@ -1,8 +1,12 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "mtideanglersv:block/dark_oak_loot_crate_bottom",
-    "side": "mtideanglersv:block/dark_oak_angler_workshop_side",
-    "top": "mtideanglersv:block/dark_oak_angler_workshop_top"
+    "down": "mtideanglersv:block/dark_oak_angler_workshop_bottom",
+    "up": "tide:block/angler_workshop_top",
+    "east": "mtideanglersv:block/dark_oak_angler_workshop_side",
+    "west": "mtideanglersv:block/dark_oak_angler_workshop_side",
+    "north": "mtideanglersv:block/dark_oak_angler_workshop",
+    "south": "mtideanglersv:block/dark_oak_angler_workshop",
+    "particle": "mtideanglersv:block/dark_oak_angler_workshop"
   }
 }
