@@ -1,24 +1,4 @@
 {
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:not" ,
-      "value": {
-        "condition": "fabric:all_mods_loaded" ,
-        "values": [
-          "lolmct"
-        ]
-      }
-    }
-  ],
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:not",
-      "value": {
-        "type": "neoforge:mod_loaded",
-        "modid": "lolmct"
-      }
-    }
-  ],
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "group": "angler_workshops",
@@ -27,19 +7,16 @@
       "item": "minecraft:dark_oak_planks"
     },
     "C": {
-      "tag": "c:player_workstations/crafting_tables"
-    },
-    "I": {
-      "item": "minecraft:iron_nugget"
+      "tag": "c:ingots/copper"
     },
     "S": {
       "tag": "c:strings"
     }
   },
   "pattern": [
-    "#S#",
-    "ICI",
-    "#I#"
+    "SS",
+    "CC",
+    "##"
   ],
   "result": {
     "count": 1,
