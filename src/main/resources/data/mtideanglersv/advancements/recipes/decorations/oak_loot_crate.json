@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "mtideanglersv:oak_loot_crate"
+        "recipe": "mtideanglersv:surface_loot_crate"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mtideanglersv:oak_loot_crate"
+      "mtideanglersv:surface_loot_crate"
     ]
   },
   "sends_telemetry_event": false
