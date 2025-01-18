@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:copper_ingot"
+            "items": ["minecraft:copper_ingot"]
           }
         ]
       },
@@ -15,7 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:spruce_planks"
+            "items": ["minecraft:spruce_planks"]
           }
         ]
       },
@@ -25,7 +25,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#c:strings"
+            "tag": "c:strings"
           }
         ]
       },
