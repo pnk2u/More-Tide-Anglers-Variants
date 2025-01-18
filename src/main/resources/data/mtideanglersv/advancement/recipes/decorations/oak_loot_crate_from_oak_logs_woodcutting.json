@@ -21,7 +21,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:oak_loot_crate_from_oak_logs_woodcutting"
+        "recipe": "minecraft:surface_loot_crate_from_oak_logs_woodcutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -34,7 +34,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:oak_loot_crate_from_oak_logs_woodcutting"
+      "minecraft:surface_loot_crate_from_oak_logs_woodcutting"
     ]
   }
 }
