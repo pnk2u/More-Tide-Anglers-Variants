@@ -1,3 +1,5 @@
 {
-  "item.tide.deep_aqua_arrow": "Tiefenwasserpfeil aus Eichenholz"
+  "item.tide.deep_aqua_arrow": "Tiefenwasserpfeil aus Eichenholz",
+  "block.tide.surface_loot_crate": "Eichenholzkiste",
+  "block.tide.angler_workshop": "Angeltisch aus Eichenholz"
 }

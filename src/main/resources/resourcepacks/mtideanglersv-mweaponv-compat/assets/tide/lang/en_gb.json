@@ -1,3 +1,5 @@
 {
-  "item.tide.deep_aqua_arrow": "Deep Aqua Oak Arrow"
+  "item.tide.deep_aqua_arrow": "Deep Aqua Oak Arrow",
+  "block.tide.surface_loot_crate": "Oak Crate",
+  "block.tide.angler_workshop": "Oak Angling Table"
 }
