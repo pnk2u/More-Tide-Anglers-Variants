@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "angler_workshops",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "C": {
+      "tag": "c:ingots/copper"
+    },
+    "S": {
+      "tag": "c:strings"
+    }
+  },
+  "pattern": [
+    "SS",
+    "CC",
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tide:angler_workshop"
+  }
+}
