@@ -16,10 +16,8 @@ repositories {
 		url = 'https://maven.parchmentmc.org'
 	}
 	maven {
-		url "https://www.cursemaven.com"
-		content {
-			includeGroup "curse.maven"
-		}
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
 	}
 }
 
@@ -52,14 +50,14 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fapi_version}"
 
 	// Tide
-	modCompileOnly "curse.maven:tide-884685:${project.tide_version_id}"
+	modCompileOnly "maven.modrinth:tide:${project.tide_version_id}"
 
 	// More Weapon Variants + MStV
-	modCompileOnly "curse.maven:more-stick-variants-1096913:${project.mstv_version_id}"
-	modCompileOnly "curse.maven:more-weapon-variants-1133775:${project.mweaponv_version_id}"
+	modCompileOnly "maven.modrinth:more-stick-variants:${project.mstv_version_id}"
+	modCompileOnly "maven.modrinth:more-weapon-variants:${project.mweaponv_version_id}"
 
 	// Cloth-Config
-	modRuntimeOnly "curse.maven:cloth-config-348521:${project.clothconfig_version_id}"
+	modRuntimeOnly "maven.modrinth:cloth-config:${project.clothconfig_version_id}"
 }
 
 processResources {
