@@ -275,6 +275,18 @@
               ]
             } ,
             {
+              "type": "minecraft:item" ,
+              "name": "mtideanglersv:pale_oak_loot_crate" ,
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check" ,
+                  "predicate": {
+                    "biomes": "minecraft:pale_garden"
+                  }
+                }
+              ]
+            } ,
+            {
               "type": "minecraft:group" ,
               "children": [
                 {
@@ -377,6 +389,12 @@
                 {
                   "type": "minecraft:item" ,
                   "name": "mtideanglersv:dark_oak_loot_crate" ,
+                  "weight": 13 ,
+                  "quality": 20
+                } ,
+                {
+                  "type": "minecraft:item" ,
+                  "name": "mtideanglersv:pale_oak_loot_crate" ,
                   "weight": 13 ,
                   "quality": 20
                 } ,

@@ -17,12 +17,8 @@
   "category": "equipment",
   "group": "deep_aqua_arrows",
   "key": {
-    "#": {
-      "item": "mstv-mweaponv:crimson_arrow"
-    },
-    "C": {
-      "item": "tide:deep_aqua_crystal"
-    }
+    "#": "mstv-mweaponv:crimson_arrow",
+    "C": "tide:deep_aqua_crystal"
   },
   "pattern": [
     "###",

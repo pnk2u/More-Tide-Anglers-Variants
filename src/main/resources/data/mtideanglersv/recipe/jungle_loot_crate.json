@@ -3,9 +3,7 @@
   "category": "misc",
   "group": "loot_crates",
   "key": {
-    "S": {
-      "item": "minecraft:jungle_slab"
-    }
+    "S": "minecraft:jungle_slab"
   },
   "pattern": [
     "SSS",

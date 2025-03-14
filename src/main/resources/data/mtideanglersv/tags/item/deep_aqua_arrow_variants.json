@@ -30,6 +30,11 @@
     },
     {
       "id":
+      "mtideanglersv:pale_oak_deep_aqua_arrow",
+      "required": false
+    },
+    {
+      "id":
       "mtideanglersv:jungle_deep_aqua_arrow",
       "required": false
     },

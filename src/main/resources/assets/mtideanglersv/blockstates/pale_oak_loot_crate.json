@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "mtideanglersv:block/pale_oak_loot_crate"
+    },
+    "open=true": {
+      "model": "mtideanglersv:block/pale_oak_loot_crate_open"
+    }
+  }
+}

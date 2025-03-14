@@ -3,15 +3,9 @@
   "category": "misc",
   "group": "angler_workshops",
   "key": {
-    "#": {
-      "item": "minecraft:crimson_planks"
-    },
-    "C": {
-      "tag": "c:ingots/copper"
-    },
-    "S": {
-      "tag": "c:strings"
-    }
+    "#": "minecraft:crimson_planks",
+    "C": "#c:ingots/copper",
+    "S": "#c:strings"
   },
   "pattern": [
     "SS",

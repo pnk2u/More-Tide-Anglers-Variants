@@ -50,11 +50,14 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fapi_version}"
 
 	// Tide
-	modCompileOnly "maven.modrinth:tide:${project.tide_version_id}"
+	modCompileOnly files("res/tide-fabric-1.21.4-1.5.0.jar")
+	modLocalRuntime files("res/tide-fabric-1.21.4-1.5.0.jar")
 
 	// More Weapon Variants + MStV
 	modCompileOnly "maven.modrinth:more-stick-variants:${project.mstv_version_id}"
+	modLocalRuntime "maven.modrinth:more-stick-variants:${project.mstv_version_id}"
 	modCompileOnly "maven.modrinth:more-weapon-variants:${project.mweaponv_version_id}"
+	modLocalRuntime "maven.modrinth:more-weapon-variants:${project.mweaponv_version_id}"
 
 	// Cloth-Config
 	modRuntimeOnly "maven.modrinth:cloth-config:${project.clothconfig_version_id}"

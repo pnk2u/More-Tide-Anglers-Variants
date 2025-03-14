@@ -8,6 +8,7 @@ import de.pnku.mtideanglersv.MoreTideAnglersVariants;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -22,17 +23,17 @@ import static net.minecraft.core.registries.BuiltInRegistries.CREATIVE_MODE_TAB;
 
 public class MtavDAArrowItems {
 
-    public static final Item ACACIA_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    public static final Item BAMBOO_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    public static final Item BIRCH_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    public static final Item CHERRY_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    public static final Item CRIMSON_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().fireResistant());
-    public static final Item DARK_OAK_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    //public static final Item PALE_OAK_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    public static final Item JUNGLE_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    public static final Item MANGROVE_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    public static final Item SPRUCE_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties());
-    public static final Item WARPED_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().fireResistant());
+    public static final Item ACACIA_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("acacia_deep_aqua_arrow"))));
+    public static final Item BAMBOO_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("bamboo_deep_aqua_arrow"))));
+    public static final Item BIRCH_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("birch_deep_aqua_arrow"))));
+    public static final Item CHERRY_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("cherry_deep_aqua_arrow"))));
+    public static final Item CRIMSON_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("crimson_deep_aqua_arrow"))).fireResistant());
+    public static final Item DARK_OAK_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("dark_oak_deep_aqua_arrow"))));
+    public static final Item PALE_OAK_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("pale_oak_deep_aqua_arrow"))));
+    public static final Item JUNGLE_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("jungle_deep_aqua_arrow"))));
+    public static final Item MANGROVE_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("mangrove_deep_aqua_arrow"))));
+    public static final Item SPRUCE_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("spruce_deep_aqua_arrow"))));
+    public static final Item WARPED_DEEP_AQUA_ARROW = new DeepAquaArrowItem(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreTideAnglersVariants.asId("warped_deep_aqua_arrow"))).fireResistant());
 
     public static void registerDAArrowItems() {
 
@@ -42,7 +43,8 @@ public class MtavDAArrowItems {
             registerDeepAquaArrowItem(JUNGLE_DEEP_AQUA_ARROW, BIRCH_DEEP_AQUA_ARROW, JUNGLE_STICK);
             registerDeepAquaArrowItem(ACACIA_DEEP_AQUA_ARROW, JUNGLE_DEEP_AQUA_ARROW, ACACIA_STICK);
             registerDeepAquaArrowItem(DARK_OAK_DEEP_AQUA_ARROW, ACACIA_DEEP_AQUA_ARROW, DARK_OAK_STICK);
-            registerDeepAquaArrowItem(MANGROVE_DEEP_AQUA_ARROW, DARK_OAK_DEEP_AQUA_ARROW, MANGROVE_STICK);
+            registerDeepAquaArrowItem(PALE_OAK_DEEP_AQUA_ARROW, DARK_OAK_DEEP_AQUA_ARROW, PALE_OAK_STICK);
+            registerDeepAquaArrowItem(MANGROVE_DEEP_AQUA_ARROW, PALE_OAK_DEEP_AQUA_ARROW, MANGROVE_STICK);
             registerDeepAquaArrowItem(CHERRY_DEEP_AQUA_ARROW, MANGROVE_DEEP_AQUA_ARROW, CHERRY_STICK);
             registerDeepAquaArrowItem(BAMBOO_DEEP_AQUA_ARROW, CHERRY_DEEP_AQUA_ARROW, Items.BAMBOO);
             registerDeepAquaArrowItem(CRIMSON_DEEP_AQUA_ARROW, BAMBOO_DEEP_AQUA_ARROW, CRIMSON_STICK);

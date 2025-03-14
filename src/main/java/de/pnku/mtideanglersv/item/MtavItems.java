@@ -9,6 +9,7 @@ import de.pnku.mtideanglersv.block.MtavBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -24,29 +25,29 @@ import static de.pnku.mtideanglersv.block.MtavBlocks.*;
 import static net.minecraft.core.registries.BuiltInRegistries.CREATIVE_MODE_TAB;
 
 public class MtavItems {
-    public static final Item SPRUCE_CRATE_I = new BlockItem(MtavBlocks.SPRUCE_CRATE, new Item.Properties());
-    public static final Item BIRCH_CRATE_I = new BlockItem(MtavBlocks.BIRCH_CRATE, new Item.Properties());
-    public static final Item JUNGLE_CRATE_I = new BlockItem(MtavBlocks.JUNGLE_CRATE, new Item.Properties());
-    public static final Item ACACIA_CRATE_I = new BlockItem(MtavBlocks.ACACIA_CRATE, new Item.Properties());
-    public static final Item DARK_OAK_CRATE_I = new BlockItem(MtavBlocks.DARK_OAK_CRATE, new Item.Properties());
-    // public static final Item PALE_OAK_CRATE_I = new BlockItem(MtavBlocks.PALE_OAK_CRATE, new Item.Properties());
-    public static final Item MANGROVE_CRATE_I = new BlockItem(MtavBlocks.MANGROVE_CRATE, new Item.Properties());
-    public static final Item CHERRY_CRATE_I = new BlockItem(MtavBlocks.CHERRY_CRATE, new Item.Properties());
-    public static final Item BAMBOO_CRATE_I = new BlockItem(MtavBlocks.BAMBOO_CRATE, new Item.Properties());
-    public static final Item CRIMSON_CRATE_I = new BlockItem(MtavBlocks.CRIMSON_CRATE, new Item.Properties().fireResistant());
-    public static final Item WARPED_CRATE_I = new BlockItem(MtavBlocks.WARPED_CRATE, new Item.Properties().fireResistant());
+    public static final Item SPRUCE_CRATE_I = new BlockItem(MtavBlocks.SPRUCE_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.SPRUCE_CRATE))).useBlockDescriptionPrefix());
+    public static final Item BIRCH_CRATE_I = new BlockItem(MtavBlocks.BIRCH_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.BIRCH_CRATE))).useBlockDescriptionPrefix());
+    public static final Item JUNGLE_CRATE_I = new BlockItem(MtavBlocks.JUNGLE_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.JUNGLE_CRATE))).useBlockDescriptionPrefix());
+    public static final Item ACACIA_CRATE_I = new BlockItem(MtavBlocks.ACACIA_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.ACACIA_CRATE))).useBlockDescriptionPrefix());
+    public static final Item DARK_OAK_CRATE_I = new BlockItem(MtavBlocks.DARK_OAK_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.DARK_OAK_CRATE))).useBlockDescriptionPrefix());
+    public static final Item PALE_OAK_CRATE_I = new BlockItem(MtavBlocks.PALE_OAK_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.PALE_OAK_CRATE))).useBlockDescriptionPrefix());
+    public static final Item MANGROVE_CRATE_I = new BlockItem(MtavBlocks.MANGROVE_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.MANGROVE_CRATE))).useBlockDescriptionPrefix());
+    public static final Item CHERRY_CRATE_I = new BlockItem(MtavBlocks.CHERRY_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.CHERRY_CRATE))).useBlockDescriptionPrefix());
+    public static final Item BAMBOO_CRATE_I = new BlockItem(MtavBlocks.BAMBOO_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.BAMBOO_CRATE))).useBlockDescriptionPrefix());
+    public static final Item CRIMSON_CRATE_I = new BlockItem(MtavBlocks.CRIMSON_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.CRIMSON_CRATE))).useBlockDescriptionPrefix().fireResistant());
+    public static final Item WARPED_CRATE_I = new BlockItem(MtavBlocks.WARPED_CRATE, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.WARPED_CRATE))).useBlockDescriptionPrefix().fireResistant());
 
-    public static final Item SPRUCE_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.SPRUCE_ANGLER_WORKSHOP, new Item.Properties());
-    public static final Item BIRCH_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.BIRCH_ANGLER_WORKSHOP, new Item.Properties());
-    public static final Item JUNGLE_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.JUNGLE_ANGLER_WORKSHOP, new Item.Properties());
-    public static final Item ACACIA_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.ACACIA_ANGLER_WORKSHOP, new Item.Properties());
-    public static final Item DARK_OAK_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.DARK_OAK_ANGLER_WORKSHOP, new Item.Properties());
-    // public static final Item PALE_OAK_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.PALE_OAK_ANGLER_WORKSHOP, new Item.Properties());
-    public static final Item MANGROVE_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.MANGROVE_ANGLER_WORKSHOP, new Item.Properties());
-    public static final Item CHERRY_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.CHERRY_ANGLER_WORKSHOP, new Item.Properties());
-    public static final Item BAMBOO_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.BAMBOO_ANGLER_WORKSHOP, new Item.Properties());
-    public static final Item CRIMSON_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.CRIMSON_ANGLER_WORKSHOP, new Item.Properties().fireResistant());
-    public static final Item WARPED_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.WARPED_ANGLER_WORKSHOP, new Item.Properties().fireResistant());
+    public static final Item SPRUCE_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.SPRUCE_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.SPRUCE_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item BIRCH_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.BIRCH_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.BIRCH_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item JUNGLE_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.JUNGLE_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.JUNGLE_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item ACACIA_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.ACACIA_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.ACACIA_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item DARK_OAK_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.DARK_OAK_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.DARK_OAK_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item PALE_OAK_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.PALE_OAK_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.PALE_OAK_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item MANGROVE_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.MANGROVE_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.MANGROVE_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item CHERRY_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.CHERRY_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.CHERRY_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item BAMBOO_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.BAMBOO_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.BAMBOO_ANGLER_WORKSHOP))).useBlockDescriptionPrefix());
+    public static final Item CRIMSON_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.CRIMSON_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.CRIMSON_ANGLER_WORKSHOP))).useBlockDescriptionPrefix().fireResistant());
+    public static final Item WARPED_ANGLER_WORKSHOP_I = new BlockItem(MtavBlocks.WARPED_ANGLER_WORKSHOP, new Item.Properties().setId(ResourceKey.create(Registries.ITEM, BuiltInRegistries.BLOCK.getKey(MtavBlocks.WARPED_ANGLER_WORKSHOP))).useBlockDescriptionPrefix().fireResistant());
 
 
 
@@ -56,7 +57,8 @@ public class MtavItems {
         registerCrateItem(JUNGLE_CRATE_I, BIRCH_CRATE_I);
         registerCrateItem(ACACIA_CRATE_I, JUNGLE_CRATE_I);
         registerCrateItem(DARK_OAK_CRATE_I, ACACIA_CRATE_I);
-        registerCrateItem(MANGROVE_CRATE_I, DARK_OAK_CRATE_I);
+        registerCrateItem(PALE_OAK_CRATE_I, DARK_OAK_CRATE_I);
+        registerCrateItem(MANGROVE_CRATE_I, PALE_OAK_CRATE_I);
         registerCrateItem(CHERRY_CRATE_I, MANGROVE_CRATE_I);
         registerCrateItem(BAMBOO_CRATE_I, CHERRY_CRATE_I);
         registerCrateItem(CRIMSON_CRATE_I, BAMBOO_CRATE_I);
@@ -67,7 +69,8 @@ public class MtavItems {
         registerAnglerWorkshopItem(JUNGLE_ANGLER_WORKSHOP_I, BIRCH_ANGLER_WORKSHOP_I);
         registerAnglerWorkshopItem(ACACIA_ANGLER_WORKSHOP_I, JUNGLE_ANGLER_WORKSHOP_I);
         registerAnglerWorkshopItem(DARK_OAK_ANGLER_WORKSHOP_I, ACACIA_ANGLER_WORKSHOP_I);
-        registerAnglerWorkshopItem(MANGROVE_ANGLER_WORKSHOP_I, DARK_OAK_ANGLER_WORKSHOP_I);
+        registerAnglerWorkshopItem(PALE_OAK_ANGLER_WORKSHOP_I, DARK_OAK_ANGLER_WORKSHOP_I);
+        registerAnglerWorkshopItem(MANGROVE_ANGLER_WORKSHOP_I, PALE_OAK_ANGLER_WORKSHOP_I);
         registerAnglerWorkshopItem(CHERRY_ANGLER_WORKSHOP_I, MANGROVE_ANGLER_WORKSHOP_I);
         registerAnglerWorkshopItem(BAMBOO_ANGLER_WORKSHOP_I, CHERRY_ANGLER_WORKSHOP_I);
         registerAnglerWorkshopItem(CRIMSON_ANGLER_WORKSHOP_I, BAMBOO_ANGLER_WORKSHOP_I);
