@@ -1,6 +1,5 @@
 package de.pnku.mtideanglersv.mixin;
 
-import de.pnku.mtideanglersv.MoreTideAnglersVariants;
 import net.fabricmc.loader.api.FabricLoader;
 import org.objectweb.asm.tree.ClassNode;
 import org.slf4j.Logger;
@@ -11,12 +10,14 @@ import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import java.util.List;
 import java.util.Set;
 
-public class MtavMixinPlugin implements IMixinConfigPlugin {
-    public static final Logger LOGGER = LoggerFactory.getLogger("mtideanglersv-mixinplugin");
+public class MtavWithMweaponvMixinPlugin implements IMixinConfigPlugin {
+    public static final Logger LOGGER = LoggerFactory.getLogger("mTideAnglersV(+mWeaponV) Mixin Plugin");
+    public static boolean isMWeaponVLoaded = false;
+
     @Override
     public void onLoad(String mixinPackage) {
         if (FabricLoader.getInstance().isModLoaded("mstv-mweaponv")){
-            MoreTideAnglersVariants.isMWeaponVLoaded = true;
+            isMWeaponVLoaded = true;
             LOGGER.info("mWeaponV (MStV+) loaded");
         }
     }
@@ -28,7 +29,7 @@ public class MtavMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-        return MoreTideAnglersVariants.isMWeaponVLoaded;
+        return isMWeaponVLoaded;
     }
 
     @Override
